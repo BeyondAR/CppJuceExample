@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="QsNQwT" name="juce-example-lib" projectType="library" version="1.0.0"
+              bundleIdentifier="com.example.lib.juce" includeBinaryInAppConfig="1"
+              jucerVersion="3.1.0">
+  <MAINGROUP id="cANplc" name="juce-example-lib">
+    <GROUP id="{D20EDCAF-4E46-DC7B-63EC-91E79FB2DA1C}" name="Common">
+      <FILE id="xdLWVQ" name="CommonJuceHeader.h" compile="0" resource="0"
+            file="../Common/CommonJuceHeader.h"/>
+      <GROUP id="{7A0DC482-E977-A949-D809-68F6CBAF9634}" name="Bar">
+        <FILE id="yGkLVs" name="Bar.cpp" compile="1" resource="0" file="../Common/Bar/Bar.cpp"/>
+        <FILE id="bIMlLp" name="Bar.h" compile="0" resource="0" file="../Common/Bar/Bar.h"/>
+      </GROUP>
+      <FILE id="GfeVZA" name="Foo.cpp" compile="1" resource="0" file="../Common/Foo.cpp"/>
+      <FILE id="Qqrz4W" name="Foo.h" compile="0" resource="0" file="../Common/Foo.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS/>
+  <MODULES>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>

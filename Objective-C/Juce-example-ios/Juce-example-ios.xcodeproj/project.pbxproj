@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC165FAE19D54BFC00757AD0 /* libjuce-example-lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC165FAD19D54A9400757AD0 /* libjuce-example-lib.a */; };
+		DCD1B72219D3708D003F16CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1B72119D3708D003F16CF /* Foundation.framework */; };
+		DCD1B72419D3708D003F16CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1B72319D3708D003F16CF /* CoreGraphics.framework */; };
+		DCD1B72619D3708D003F16CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1B72519D3708D003F16CF /* UIKit.framework */; };
+		DCD1B72C19D3708D003F16CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD1B72A19D3708D003F16CF /* InfoPlist.strings */; };
+		DCD1B72E19D3708D003F16CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1B72D19D3708D003F16CF /* main.m */; };
+		DCD1B73219D3708D003F16CF /* JPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1B73119D3708D003F16CF /* JPSAppDelegate.m */; };
+		DCD1B73519D3708D003F16CF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD1B73319D3708D003F16CF /* Main_iPhone.storyboard */; };
+		DCD1B73819D3708D003F16CF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD1B73619D3708D003F16CF /* Main_iPad.storyboard */; };
+		DCD1B73B19D3708D003F16CF /* JPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1B73A19D3708D003F16CF /* JPSViewController.m */; };
+		DCD1B73D19D3708D003F16CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD1B73C19D3708D003F16CF /* Images.xcassets */; };
+		DCD1B74419D3708D003F16CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1B74319D3708D003F16CF /* XCTest.framework */; };
+		DCD1B74519D3708D003F16CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1B72119D3708D003F16CF /* Foundation.framework */; };
+		DCD1B74619D3708D003F16CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1B72519D3708D003F16CF /* UIKit.framework */; };
+		DCD1B74E19D3708D003F16CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCD1B74C19D3708D003F16CF /* InfoPlist.strings */; };
+		DCD1B75019D3708D003F16CF /* Juce_example_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD1B74F19D3708D003F16CF /* Juce_example_iosTests.m */; };
+		DCD1B76219D373D9003F16CF /* JPSExampleCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = DCD1B76119D373D9003F16CF /* JPSExampleCpp.mm */; };
+		DCD1B76519D37657003F16CF /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD1B76419D37657003F16CF /* libc++.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC165FAC19D54A9400757AD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC165FA819D54A9400757AD0 /* juce-example-lib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABDAE7F3DF4D02A44716E5FA;
+			remoteInfo = "juce-example-lib";
+		};
+		DCD1B74719D3708D003F16CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD1B71619D3708D003F16CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD1B71D19D3708D003F16CF;
+			remoteInfo = "Juce-example-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC165FA819D54A9400757AD0 /* juce-example-lib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "juce-example-lib.xcodeproj"; path = "../Builds/iOS/juce-example-lib.xcodeproj"; sourceTree = "<group>"; };
+		DCD1B71E19D3708D003F16CF /* Juce-example-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Juce-example-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD1B72119D3708D003F16CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCD1B72319D3708D003F16CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCD1B72519D3708D003F16CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCD1B72919D3708D003F16CF /* Juce-example-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Juce-example-ios-Info.plist"; sourceTree = "<group>"; };
+		DCD1B72B19D3708D003F16CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCD1B72D19D3708D003F16CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCD1B72F19D3708D003F16CF /* Juce-example-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Juce-example-ios-Prefix.pch"; sourceTree = "<group>"; };
+		DCD1B73019D3708D003F16CF /* JPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JPSAppDelegate.h; path = "Juce-example-ios/JPSAppDelegate.h"; sourceTree = "<group>"; };
+		DCD1B73119D3708D003F16CF /* JPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JPSAppDelegate.m; path = "Juce-example-ios/JPSAppDelegate.m"; sourceTree = "<group>"; };
+		DCD1B73419D3708D003F16CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DCD1B73719D3708D003F16CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DCD1B73919D3708D003F16CF /* JPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JPSViewController.h; path = "Juce-example-ios/JPSViewController.h"; sourceTree = "<group>"; };
+		DCD1B73A19D3708D003F16CF /* JPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JPSViewController.m; path = "Juce-example-ios/JPSViewController.m"; sourceTree = "<group>"; };
+		DCD1B73C19D3708D003F16CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Juce-example-ios/Images.xcassets"; sourceTree = "<group>"; };
+		DCD1B74219D3708D003F16CF /* Juce-example-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Juce-example-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD1B74319D3708D003F16CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DCD1B74B19D3708D003F16CF /* Juce-example-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Juce-example-iosTests-Info.plist"; sourceTree = "<group>"; };
+		DCD1B74D19D3708D003F16CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCD1B74F19D3708D003F16CF /* Juce_example_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Juce_example_iosTests.m; sourceTree = "<group>"; };
+		DCD1B76019D373D9003F16CF /* JPSExampleCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSExampleCpp.h; sourceTree = "<group>"; };
+		DCD1B76119D373D9003F16CF /* JPSExampleCpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JPSExampleCpp.mm; sourceTree = "<group>"; };
+		DCD1B76419D37657003F16CF /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD1B71B19D3708D003F16CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC165FAE19D54BFC00757AD0 /* libjuce-example-lib.a in Frameworks */,
+				DCD1B76519D37657003F16CF /* libc++.dylib in Frameworks */,
+				DCD1B72419D3708D003F16CF /* CoreGraphics.framework in Frameworks */,
+				DCD1B72619D3708D003F16CF /* UIKit.framework in Frameworks */,
+				DCD1B72219D3708D003F16CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD1B73F19D3708D003F16CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1B74419D3708D003F16CF /* XCTest.framework in Frameworks */,
+				DCD1B74619D3708D003F16CF /* UIKit.framework in Frameworks */,
+				DCD1B74519D3708D003F16CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC165FA919D54A9400757AD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC165FAD19D54A9400757AD0 /* libjuce-example-lib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD1B71519D3708D003F16CF = {
+			isa = PBXGroup;
+			children = (
+				DCD1B75F19D373BD003F16CF /* Source */,
+				DCD1B72719D3708D003F16CF /* Juce-example-ios */,
+				DCD1B73019D3708D003F16CF /* JPSAppDelegate.h */,
+				DCD1B73119D3708D003F16CF /* JPSAppDelegate.m */,
+				DCD1B73319D3708D003F16CF /* Main_iPhone.storyboard */,
+				DCD1B73619D3708D003F16CF /* Main_iPad.storyboard */,
+				DCD1B73919D3708D003F16CF /* JPSViewController.h */,
+				DCD1B73A19D3708D003F16CF /* JPSViewController.m */,
+				DCD1B73C19D3708D003F16CF /* Images.xcassets */,
+				DCD1B72819D3708D003F16CF /* Supporting Files */,
+				DCD1B74919D3708D003F16CF /* Juce-example-iosTests */,
+				DCD1B72019D3708D003F16CF /* Frameworks */,
+				DCD1B71F19D3708D003F16CF /* Products */,
+				DC165FA819D54A9400757AD0 /* juce-example-lib.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD1B71F19D3708D003F16CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1B71E19D3708D003F16CF /* Juce-example-ios.app */,
+				DCD1B74219D3708D003F16CF /* Juce-example-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD1B72019D3708D003F16CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1B76419D37657003F16CF /* libc++.dylib */,
+				DCD1B72119D3708D003F16CF /* Foundation.framework */,
+				DCD1B72319D3708D003F16CF /* CoreGraphics.framework */,
+				DCD1B72519D3708D003F16CF /* UIKit.framework */,
+				DCD1B74319D3708D003F16CF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCD1B72719D3708D003F16CF /* Juce-example-ios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Juce-example-ios";
+			sourceTree = "<group>";
+		};
+		DCD1B72819D3708D003F16CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1B72919D3708D003F16CF /* Juce-example-ios-Info.plist */,
+				DCD1B72A19D3708D003F16CF /* InfoPlist.strings */,
+				DCD1B72D19D3708D003F16CF /* main.m */,
+				DCD1B72F19D3708D003F16CF /* Juce-example-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = "Juce-example-ios";
+			sourceTree = "<group>";
+		};
+		DCD1B74919D3708D003F16CF /* Juce-example-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1B74F19D3708D003F16CF /* Juce_example_iosTests.m */,
+				DCD1B74A19D3708D003F16CF /* Supporting Files */,
+			);
+			path = "Juce-example-iosTests";
+			sourceTree = "<group>";
+		};
+		DCD1B74A19D3708D003F16CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1B74B19D3708D003F16CF /* Juce-example-iosTests-Info.plist */,
+				DCD1B74C19D3708D003F16CF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCD1B75F19D373BD003F16CF /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DCD1B76019D373D9003F16CF /* JPSExampleCpp.h */,
+				DCD1B76119D373D9003F16CF /* JPSExampleCpp.mm */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD1B71D19D3708D003F16CF /* Juce-example-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD1B75319D3708D003F16CF /* Build configuration list for PBXNativeTarget "Juce-example-ios" */;
+			buildPhases = (
+				DCD1B71A19D3708D003F16CF /* Sources */,
+				DCD1B71B19D3708D003F16CF /* Frameworks */,
+				DCD1B71C19D3708D003F16CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Juce-example-ios";
+			productName = "Juce-example-ios";
+			productReference = DCD1B71E19D3708D003F16CF /* Juce-example-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCD1B74119D3708D003F16CF /* Juce-example-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD1B75619D3708D003F16CF /* Build configuration list for PBXNativeTarget "Juce-example-iosTests" */;
+			buildPhases = (
+				DCD1B73E19D3708D003F16CF /* Sources */,
+				DCD1B73F19D3708D003F16CF /* Frameworks */,
+				DCD1B74019D3708D003F16CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD1B74819D3708D003F16CF /* PBXTargetDependency */,
+			);
+			name = "Juce-example-iosTests";
+			productName = "Juce-example-iosTests";
+			productReference = DCD1B74219D3708D003F16CF /* Juce-example-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD1B71619D3708D003F16CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JPS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Joan Puig Sanz";
+				TargetAttributes = {
+					DCD1B74119D3708D003F16CF = {
+						TestTargetID = DCD1B71D19D3708D003F16CF;
+					};
+				};
+			};
+			buildConfigurationList = DCD1B71919D3708D003F16CF /* Build configuration list for PBXProject "Juce-example-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCD1B71519D3708D003F16CF;
+			productRefGroup = DCD1B71F19D3708D003F16CF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DC165FA919D54A9400757AD0 /* Products */;
+					ProjectRef = DC165FA819D54A9400757AD0 /* juce-example-lib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DCD1B71D19D3708D003F16CF /* Juce-example-ios */,
+				DCD1B74119D3708D003F16CF /* Juce-example-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DC165FAD19D54A9400757AD0 /* libjuce-example-lib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjuce-example-lib.a";
+			remoteRef = DC165FAC19D54A9400757AD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD1B71C19D3708D003F16CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1B73819D3708D003F16CF /* Main_iPad.storyboard in Resources */,
+				DCD1B73D19D3708D003F16CF /* Images.xcassets in Resources */,
+				DCD1B73519D3708D003F16CF /* Main_iPhone.storyboard in Resources */,
+				DCD1B72C19D3708D003F16CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD1B74019D3708D003F16CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1B74E19D3708D003F16CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD1B71A19D3708D003F16CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1B73219D3708D003F16CF /* JPSAppDelegate.m in Sources */,
+				DCD1B72E19D3708D003F16CF /* main.m in Sources */,
+				DCD1B76219D373D9003F16CF /* JPSExampleCpp.mm in Sources */,
+				DCD1B73B19D3708D003F16CF /* JPSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD1B73E19D3708D003F16CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD1B75019D3708D003F16CF /* Juce_example_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCD1B74819D3708D003F16CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD1B71D19D3708D003F16CF /* Juce-example-ios */;
+			targetProxy = DCD1B74719D3708D003F16CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCD1B72A19D3708D003F16CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD1B72B19D3708D003F16CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCD1B73319D3708D003F16CF /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD1B73419D3708D003F16CF /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			path = "Juce-example-ios";
+			sourceTree = "<group>";
+		};
+		DCD1B73619D3708D003F16CF /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD1B73719D3708D003F16CF /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			path = "Juce-example-ios";
+			sourceTree = "<group>";
+		};
+		DCD1B74C19D3708D003F16CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD1B74D19D3708D003F16CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCD1B75119D3708D003F16CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCD1B75219D3708D003F16CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCD1B75419D3708D003F16CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Juce-example-ios/Juce-example-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"OBJECTIVEC=1",
+					"IOS=1",
+					"DEBUG=1",
+				);
+				INFOPLIST_FILE = "Juce-example-ios/Juce-example-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCD1B75519D3708D003F16CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Juce-example-ios/Juce-example-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"OBJECTIVEC=1",
+					"IOS=1",
+				);
+				INFOPLIST_FILE = "Juce-example-ios/Juce-example-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DCD1B75719D3708D003F16CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Juce-example-ios.app/Juce-example-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Juce-example-ios/Juce-example-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Juce-example-iosTests/Juce-example-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DCD1B75819D3708D003F16CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Juce-example-ios.app/Juce-example-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Juce-example-ios/Juce-example-ios-Prefix.pch";
+				INFOPLIST_FILE = "Juce-example-iosTests/Juce-example-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD1B71919D3708D003F16CF /* Build configuration list for PBXProject "Juce-example-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD1B75119D3708D003F16CF /* Debug */,
+				DCD1B75219D3708D003F16CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD1B75319D3708D003F16CF /* Build configuration list for PBXNativeTarget "Juce-example-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD1B75419D3708D003F16CF /* Debug */,
+				DCD1B75519D3708D003F16CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD1B75619D3708D003F16CF /* Build configuration list for PBXNativeTarget "Juce-example-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD1B75719D3708D003F16CF /* Debug */,
+				DCD1B75819D3708D003F16CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD1B71619D3708D003F16CF /* Project object */;
+}

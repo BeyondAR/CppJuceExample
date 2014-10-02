@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="QsNQwT" name="juce-example-lib" projectType="library" version="1.0.0"
+              bundleIdentifier="com.example.lib.juce" includeBinaryInAppConfig="1"
+              jucerVersion="3.1.0">
+  <MAINGROUP id="cANplc" name="juce-example-lib">
+    <GROUP id="{D20EDCAF-4E46-DC7B-63EC-91E79FB2DA1C}" name="Common">
+      <GROUP id="{521A22F1-7365-18FE-533E-3D50328DD5E4}" name="Util">
+        <FILE id="utB5Yb" name="Log.cpp" compile="1" resource="0" file="../Common/Util/Log.cpp"/>
+        <FILE id="wgEIZJ" name="Log.h" compile="0" resource="0" file="../Common/Util/Log.h"/>
+      </GROUP>
+      <GROUP id="{B1F721D3-1AA2-ED21-FCB0-7104A44C8BD9}" name="Foo">
+        <GROUP id="{4298CBB9-F51E-219E-E81D-711458C5BE2B}" name="Bar">
+          <FILE id="FXs2br" name="Bar.cpp" compile="1" resource="0" file="../Common/Foo/Bar/Bar.cpp"/>
+          <FILE id="HhFrT6" name="Bar.h" compile="0" resource="0" file="../Common/Foo/Bar/Bar.h"/>
+        </GROUP>
+        <FILE id="MEpfJd" name="Foo.cpp" compile="1" resource="0" file="../Common/Foo/Foo.cpp"/>
+        <FILE id="Zsdpni" name="Foo.h" compile="0" resource="0" file="../Common/Foo/Foo.h"/>
+      </GROUP>
+      <FILE id="xdLWVQ" name="CommonJuceHeader.h" compile="0" resource="0"
+            file="../Common/CommonJuceHeader.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraDefs="MAC=1&#10;OBJECTIVEC=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="juce-example-lib" cppLibType="libc++"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="2" targetName="juce-example-lib" cppLibType="libc++"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../Juce"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <XCODE_IPHONE targetFolder="Builds/iOS" extraDefs="IOS=1&#10;OBJECTIVEC=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" iosCompatibility="5.1" isDebug="1" optimisation="1"
+                       targetName="juce-example-lib" cppLibType="libc++"/>
+        <CONFIGURATION name="Release" iosCompatibility="5.1" isDebug="0" optimisation="2"
+                       targetName="juce-example-lib" cppLibType="libc++"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../Juce"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
