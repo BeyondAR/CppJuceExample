@@ -76,9 +76,13 @@ else
 endif
 #END Juce configuration
 
+LOCAL_CPPFLAGS += -ffunction-sections 
+LOCAL_CFLAGS += -ffunction-sections
+
 # This flags are used to reduce the size of the library
-LOCAL_CPPFLAGS += -ffunction-sections -fdata-sections -fvisibility=hidden
-LOCAL_CFLAGS += -ffunction-sections -fdata-sections 
+LOCAL_CPPFLAGS +=  -fdata-sections -fvisibility=hidden -Os
+LOCAL_CFLAGS += -fdata-sections  -fvisibility=hidden -Os
+
 ifeq ($(TARGET_ARCH),mips)
   LOCAL_LDFLAGS += -Wl,--gc-sections
 else

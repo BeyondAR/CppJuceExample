@@ -25,7 +25,7 @@ endif
 # armbi-v7 supports armeabi and we don't use the performance features that 
 # armebi-v7a provides
 ifeq ($(DEBUG),1)
-  APP_ABI := armeabi
+  APP_ABI := armeabi-v7a
 else
  APP_ABI := armeabi x86 mips
 endif
@@ -36,8 +36,8 @@ ifeq ($(ALL),1)
 endif
 
 # Toolchan 4.8 generate binaries that doesn't work on older devices (NDK known bug)
-NDK_TOOLCHAIN_VERSION=4.6
+NDK_TOOLCHAIN_VERSION=4.8
 # We use gnustl_static because it creates a smallest package than the gnustl_shared
 APP_STL := gnustl_static
 APP_CPPFLAGS += -fsigned-char -fexceptions -frtti -Wno-psabi
-APP_PLATFORM := android-4
+APP_PLATFORM := android-8
